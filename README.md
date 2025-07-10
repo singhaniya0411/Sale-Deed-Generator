@@ -30,10 +30,10 @@ for a property of {{property_size}} sq.ft., sold for ₹{{sale_amount}}.
 
 ```
 sale-deed-generator/
-├── client/      # React frontend (Vite)
+├── Frontend/      # React frontend (Vite)
 │   └── src/
-│       └── App.jsx
-├── server/      # Node.js backend with Puppeteer
+│   |   └── App.jsx   
+├── Backend/       # Node.js backend with Puppeteer
 │   ├── templates/
 │   │   └── deed_template.html
 │   └── index.js
@@ -45,7 +45,7 @@ sale-deed-generator/
 ### 🔧 Backend Setup
 
 ```bash
-cd server
+cd Backend
 npm install
 node index.js
 ```
@@ -56,14 +56,14 @@ node index.js
 ### 🌐 Frontend Setup
 
 ```bash
-cd client
+cd Frontend
 npm install
 npm run dev
 ```
 
 - Runs at: `http://localhost:5173`
 
-Ensure this proxy is set in `client/vite.config.js`:
+Ensure this proxy is set in `Frontend/vite.config.js`:
 
 ```js
 server: {
